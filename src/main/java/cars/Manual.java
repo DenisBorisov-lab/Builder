@@ -22,12 +22,12 @@ public class Manual {
         this.gpsNavigator = gpsNavigator;
     }
     public String print(){
-        String manual = "type:" + type + "\n" + "seats: " + seats + "\n" + "engine: " + engine + "\n" + "transmission: " + transmission;
+        String manual = "type:" + type + "\n" + "seats: " + seats + "\n" + "engine volume: " + engine.getVolume() + "\n" + "engine mileage: " + engine.getMileage() + "\n" + "transmission: " + transmission;
         if (gpsNavigator != null){
-            manual += "\n" + "GPSNavigator" + gpsNavigator.getRoad();
+            manual += "\n" + "GPSNavigator: " + gpsNavigator.getRoad();
         }
-        if (tripComputer != null){
-            manual += "\n" + "trip computer: " + tripComputer;
+        if (this.tripComputer != null){
+            manual += "\n" + "trip computer: " + true;
         }
         return manual;
     }
