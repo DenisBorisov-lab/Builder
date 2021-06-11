@@ -19,5 +19,9 @@ public class Demo {
         director.constructSportCar(carManualBuilder);
         Manual result1 = carManualBuilder.getResult();
         System.out.println(result1.print());
+        System.out.println();
+        director.constructCityCar(carManualBuilder);
+        Manual result2 = carManualBuilder.getResult();
+        System.out.println(result2.print());
     }
 }
