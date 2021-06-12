@@ -1,9 +1,9 @@
 package components;
 
 public class GPSNavigator {
-    private String road ;
+    private String road;
 
-    public GPSNavigator(){
+    public GPSNavigator() {
         this.road = "Москва-Самара";
     }
 

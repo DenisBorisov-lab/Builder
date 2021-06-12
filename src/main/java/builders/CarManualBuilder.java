@@ -7,7 +7,7 @@ import components.GPSNavigator;
 import components.Transmission;
 import components.TripComputer;
 
-public class CarManualBuilder implements Builder{
+public class CarManualBuilder implements Builder {
 
     private Type type;
     private int seats;

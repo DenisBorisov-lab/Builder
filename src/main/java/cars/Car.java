@@ -42,7 +42,7 @@ public class Car {
         return transmission;
     }
 
-    public Car(Type type,  int seats, Engine engine,Transmission transmission , TripComputer tripComputer, GPSNavigator gpsNavigator) {
+    public Car(Type type, int seats, Engine engine, Transmission transmission, TripComputer tripComputer, GPSNavigator gpsNavigator) {
         this.type = type;
         this.seats = seats;
         this.engine = engine;

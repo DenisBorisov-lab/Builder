@@ -8,9 +8,14 @@ import components.TripComputer;
 
 public interface Builder {
     void setType(Type type);
+
     void setSeats(int seats);
+
     void setEngine(Engine engine);
+
     void setTransmission(Transmission transmission);
+
     void setGPSNavigator(GPSNavigator navigator);
+
     void setTripComputer(TripComputer computer);
 }

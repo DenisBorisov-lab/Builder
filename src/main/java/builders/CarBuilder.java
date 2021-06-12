@@ -7,7 +7,7 @@ import components.GPSNavigator;
 import components.Transmission;
 import components.TripComputer;
 
-public class CarBuilder implements Builder{
+public class CarBuilder implements Builder {
     private Type type;
     private int seats;
     private Engine engine;
@@ -19,6 +19,7 @@ public class CarBuilder implements Builder{
     public Car getResult() {
         return new Car(type, seats, engine, transmission, tripComputer, navigator);
     }
+
     @Override
     public void setType(Type type) {
         this.type = type;
