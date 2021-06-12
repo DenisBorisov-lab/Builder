@@ -16,10 +16,6 @@ public class CarBuilder implements Builder {
     private GPSNavigator navigator;
 
 
-    public Car getResult() {
-        return new Car(type, seats, engine, transmission, tripComputer, navigator);
-    }
-
     @Override
     public void setType(Type type) {
         this.type = type;
@@ -48,5 +44,9 @@ public class CarBuilder implements Builder {
     @Override
     public void setTripComputer(TripComputer computer) {
         this.tripComputer = computer;
+    }
+
+    public Car getResult() {
+        return new Car(type, seats, engine, transmission, tripComputer, navigator);
     }
 }

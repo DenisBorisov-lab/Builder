@@ -15,11 +15,12 @@ public class Demo {
         Car result = carBuilder.getResult();
         System.out.println(result.getSeats());
 
-        CarManualBuilder carManualBuilder = new CarManualBuilder();
-        director.constructSportCar(carManualBuilder);
-        Manual result1 = carManualBuilder.getResult();
+        CarManualBuilder carManualBuilder2 = new CarManualBuilder();
+        director.constructSportCar(carManualBuilder2);
+        Manual result1 = carManualBuilder2.getResult();
         System.out.println(result1.print());
         System.out.println();
+        CarManualBuilder carManualBuilder = new CarManualBuilder();
         director.constructCityCar(carManualBuilder);
         Manual result2 = carManualBuilder.getResult();
         System.out.println(result2.print());

@@ -24,7 +24,7 @@ public class Manual {
 
     public String print() {
         String manual = "type:" + type + "\n" + "seats: " + seats + "\n" + "engine volume: " + engine.getVolume() + "\n" + "engine mileage: " + engine.getMileage() + "\n" + "transmission: " + transmission;
-        if (gpsNavigator != null) {
+        if (this.gpsNavigator != null) {
             manual += "\n" + "GPSNavigator: " + gpsNavigator.getRoad();
         }
         if (this.tripComputer != null) {

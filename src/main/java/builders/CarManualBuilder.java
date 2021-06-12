@@ -16,9 +16,6 @@ public class CarManualBuilder implements Builder {
     private TripComputer tripComputer;
     private GPSNavigator navigator;
 
-    public Manual getResult() {
-        return new Manual(type, seats, engine, transmission, tripComputer, navigator);
-    }
 
     @Override
     public void setType(Type type) {
@@ -48,5 +45,9 @@ public class CarManualBuilder implements Builder {
     @Override
     public void setTripComputer(TripComputer computer) {
         this.tripComputer = computer;
+    }
+
+    public Manual getResult() {
+        return new Manual(type, seats, engine, transmission, tripComputer, navigator);
     }
 }

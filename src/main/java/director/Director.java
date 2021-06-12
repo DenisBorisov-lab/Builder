@@ -24,6 +24,5 @@ public class Director {
         builder.setEngine(new Engine(1.2, 0));
         builder.setTransmission(Transmission.AUTOMATIC);
         builder.setGPSNavigator(new GPSNavigator());
-        builder.setTripComputer(null);
     }
 }
