@@ -4,7 +4,8 @@ public class Engine {
     private double volume;
     private double mileage;
     private boolean started;
-    public Engine(double volume, double mileage){
+
+    public Engine(double volume, double mileage) {
         this.volume = volume;
         this.mileage = mileage;
     }
@@ -17,16 +18,18 @@ public class Engine {
         return mileage;
     }
 
-    public void on(){
+    public void on() {
         started = true;
     }
-    public void off(){
+
+    public void off() {
         started = false;
     }
-    public void go(double mileage){
-        if (started){
+
+    public void go(double mileage) {
+        if (started) {
             this.mileage += mileage;
-        }else {
+        } else {
             System.out.println("Двигательне включён");
         }
     }

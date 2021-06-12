@@ -7,7 +7,7 @@ import components.GPSNavigator;
 import components.Transmission;
 import components.TripComputer;
 
-public class CarManualBuilder implements Builder{
+public class CarManualBuilder implements Builder {
 
     private Type type;
     private int seats;
@@ -16,37 +16,38 @@ public class CarManualBuilder implements Builder{
     private TripComputer tripComputer;
     private GPSNavigator navigator;
 
-    public Manual getResult() {
-        return new Manual(type, seats, engine, transmission, tripComputer, navigator);
-    }
 
     @Override
     public void setType(Type type) {
-
+        this.type = type;
     }
 
     @Override
     public void setSeats(int seats) {
-
+        this.seats = seats;
     }
 
     @Override
     public void setEngine(Engine engine) {
-
+        this.engine = engine;
     }
 
     @Override
     public void setTransmission(Transmission transmission) {
-
+        this.transmission = transmission;
     }
 
     @Override
     public void setGPSNavigator(GPSNavigator navigator) {
-
+        this.navigator = navigator;
     }
 
     @Override
     public void setTripComputer(TripComputer computer) {
+        this.tripComputer = computer;
+    }
 
+    public Manual getResult() {
+        return new Manual(type, seats, engine, transmission, tripComputer, navigator);
     }
 }
